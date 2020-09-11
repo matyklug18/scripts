@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'airblade/vim-gitgutter'
+Plug 'SirVer/ultisnips'
 call plug#end()
 
 set tabstop=2
@@ -15,3 +17,5 @@ set hlsearch
 set clipboard=unnamedplus
 set mouse=a
 colorscheme gruvbox
+
+let g:UltiSnipsJumpForwardTrigger="<tab>"

@@ -23,13 +23,6 @@ function edit {
 	fi
 }
 
-function update {
-	sudo pacman -Syu
-	if (( $? == 0 )) && test -f /tmp/updates-needed; then
-		rm /tmp/updates-needed
-	fi
-}
-
 function power {
 	if [[ $1 == "sleep" ]]; then
 		systemctl suspend
